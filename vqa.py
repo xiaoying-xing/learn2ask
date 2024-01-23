@@ -164,7 +164,5 @@ class VQAagent():
         return answer, {"denotative_q": denotative_questions, "denotative_an": denotative_answers,
                         "connotative_q": connotative_questions, "connotative_an": connotative_answers}
 
-#openai_key = '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' # lyx
-openai_key = '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'
 openai.api_key = openai_key
 vqa_llm = VQAagent(relevance=False, confidence=True)
